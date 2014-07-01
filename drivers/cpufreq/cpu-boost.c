@@ -50,6 +50,8 @@ static struct work_struct input_boost_work;
 #ifdef CONFIG_LCD_NOTIFY
 static struct notifier_block notif;
 #endif
+static unsigned int cpu_boost = 0;
+module_param(cpu_boost, uint, 0644);
 
 static unsigned int boost_ms;
 module_param(boost_ms, uint, 0644);
@@ -310,7 +312,11 @@ static void cpuboost_input_event(struct input_handle *handle,
 	u64 now;
 	unsigned int min_interval;
 
+	if (!cpu_boost)
+		return;
 	if (!input_boost_freq || work_pending(&input_boost_work))
+
+	if (!input_boost_freq)
 		return;
 
 	now = ktime_to_us(ktime_get());
