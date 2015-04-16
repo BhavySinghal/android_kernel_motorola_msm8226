@@ -124,18 +124,10 @@ config CPU_FREQ_DEFAULT_GOV_YANKACTIVE
           loading your cpufreq low-level hardware driver, using the
           'yankactive' governor for latency-sensitive workloads.
 
-config CPU_FREQ_DEFAULT_GOV_IMPULSE
-	bool "impulse"
-	select CPU_FREQ_GOV_IMPULSE
-	help
-	  Use the CPUFreq governor 'impulse' as default.
-
 config CPU_FREQ_DEFAULT_GOV_ALUCARD
   	bool "alucard"
  	select CPU_FREQ_GOV_ALUCARD
  	help
-
-endchoice
 
 config CPU_FREQ_DEFAULT_GOV_PEGASUSQ
 	bool "pegasusq"
