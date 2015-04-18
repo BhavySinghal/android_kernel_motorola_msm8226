@@ -39,7 +39,7 @@
 #define DEF_SAMPLING_DOWN_FACTOR		(1)
 #define MAX_SAMPLING_DOWN_FACTOR		(3)
 #define DEF_FREQUENCY_DOWN_DIFFERENTIAL		(5)
-#define DEF_FREQUENCY_UP_THRESHOLD		(70)
+#define DEF_FREQUENCY_UP_THRESHOLD		(90)
 
 /* for multiple freq_step */
 #define DEF_UP_THRESHOLD_DIFF			(5)
@@ -57,7 +57,7 @@
 #define DEF_START_DELAY				(0)
 
 #define UP_THRESHOLD_AT_MIN_FREQ		(40)
-#define FREQ_FOR_RESPONSIVENESS			(1190000)
+#define FREQ_FOR_RESPONSIVENESS			(988000)
 /* for fast decrease */
 #define FREQ_FOR_FAST_DOWN			(787000)
 #define UP_THRESHOLD_AT_FAST_DOWN		(85)
