@@ -316,9 +316,6 @@ static void cpuboost_input_event(struct input_handle *handle,
 		return;
 	if (!input_boost_freq || work_pending(&input_boost_work))
 
-	if (!input_boost_freq)
-		return;
-
 	now = ktime_to_us(ktime_get());
 	min_interval = max(min_input_interval, input_boost_ms);
 
