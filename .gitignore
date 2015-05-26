@@ -70,6 +70,7 @@ patches-*
 # quilt's files
 patches
 series
+dtbTool
 
 # cscope files
 cscope.*
